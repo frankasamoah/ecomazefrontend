@@ -1,117 +1,206 @@
 import { Link } from "react-router-dom";
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import {
+  BsGem,
+  BsGithub,
+  BsLinkedin,
+  BsFacebook,
+  BsTwitter,
+  BsGoogle,
+  BsInstagram,
+  BsFillEnvelopeAtFill,
+  BsFillTelephoneForwardFill,
+} from "react-icons/bs";
+import { FaHome, FaPrint } from "react-icons/fa";
 
 const Footer = () => {
   return (
-
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
+    <div className="text-center text-lg-start text-muted">
+      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div className="me-5 d-none d-lg-block">
           <span>Get connected with us on social networks:</span>
         </div>
 
         <div>
-          <a href='#!' className='me-4 text-reset' target="_blank" rel="noreferrer">
-            <MDBIcon fab icon="facebook-f" />
+          <a
+            href="#!"
+            className="me-4 text-reset"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsFacebook />
           </a>
-          <a href='#!' className='me-4 text-reset' target="_blank" rel="noreferrer">
-            <MDBIcon fab icon="twitter" />
+          <a
+            href="#!"
+            className="me-4 text-reset"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsTwitter />
           </a>
-          <a href='#!' className='me-4 text-reset' target="_blank" rel="noreferrer">
-            <MDBIcon fab icon="google" />
+          <a
+            href="#!"
+            className="me-4 text-reset"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGoogle />
           </a>
-          <a href='#!' className='me-4 text-reset' target="_blank" rel="noreferrer">
-            <MDBIcon fab icon="instagram" />
+          <a
+            href="#!"
+            className="me-4 text-reset"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsInstagram />
           </a>
-          <a href='#!' className='me-4 text-reset' target="_blank" rel="noreferrer">
-            <MDBIcon fab icon="linkedin" />
+          <a
+            href="#!"
+            className="me-4 text-reset"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin />
           </a>
-          <a href='https://github.com/frankasamoah' className='me-4 text-reset' target="_blank" rel="noreferrer">
-            <MDBIcon fab icon="github" />
+          <a
+            href="https://github.com/frankasamoah"
+            className="me-4 text-reset"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
           </a>
         </div>
       </section>
 
-      <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon icon="gem" className="me-3" />
-                Ecomaze
-              </h6>
-              <p>
-                Most advanced shopping experience using AI. The recommendations are out of this world
-              </p>
-            </MDBCol>
+      <section className="">
+        <div className="container text-center text-md-start mt-5">
+          <div className="row mt-3 ">
+            <div
+              md="3"
+              lg="4"
+              xl="3"
+              className="mx-auto mb-md-0 mb-4 col-sm-3"
+            >
+              <div className="w-75 mx-auto">
+                <h6 className="text-uppercase fw-bold mb-4">
+                  <BsGem className="me-3 " />
+                  Ecomaze
+                </h6>
+                <p>
+                  Most advanced shopping experience using AI. The
+                  recommendations are out of this world
+                </p>
+              </div>
+            </div>
 
-            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+            <div
+              md="2"
+              lg="2"
+              xl="2"
+              className="mx-auto mb-md-0 mb-4 col-sm-3"
+            >
+              
+              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href="#!" className="text-reset">
                   React
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href="#!" className="text-reset">
                   Node.js
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href="#!" className="text-reset">
                   HTML5
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href="#!" className="text-reset">
                   CSS3
                 </a>
               </p>
-            </MDBCol>
+              
+            </div>
 
-            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+            <div
+              md="3"
+              lg="2"
+              xl="2"
+              className="mx-auto mb-md-0 mb-4 col-sm-3"
+            >
+              
+              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-              <Link to="/about" style={{
-                color: "#757575"
-              }}>About</Link>
+                <Link
+                  to="/about"
+                  style={{
+                    color: "#757575",
+                  }}
+                >
+                  About
+                </Link>
+              </p>
+
+              <p>
+                <Link
+                  to="/policy"
+                  style={{
+                    color: "#757575",
+                  }}
+                >
+                  Privacy Policy
+                </Link>
               </p>
               
-              <p>
-              <Link to="/policy" style={{
-                color: "#757575"
-              }}>Privacy Policy</Link>
-              </p>
-            </MDBCol>
+            </div>
 
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+            <div
+              md="4"
+              lg="3"
+              xl="3"
+              className="mx-auto mb-md-0 mb-4 col-sm-3"
+            >
+             
+              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
+                <FaHome className="me-2" />
                 Dortmund, NRW 44137, DE
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-3" />
+                <BsFillEnvelopeAtFill className="me-2" />
                 info@ecomaze.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 49 234 567 8801
+                <BsFillTelephoneForwardFill className="me-2" /> + 49 234 567
+                8801
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 49 234 567 8991
+                <FaPrint className="me-2" /> + 49 234 567 8991
               </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
+            </div>
+            
+          </div>
+        </div>
       </section>
 
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://franklyfrank-web.netlify.app' target="_blank" rel="noreferrer">{" "}
-        https://franklyfrank-web.netlify.app
+      <div
+        className="text-center p-4"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
+      >
+        © 2023 Copyright:
+        <a
+          className="text-reset fw-bold"
+          href="https://franklyfrank-web.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          https://franklyfrank-web.netlify.app
         </a>
       </div>
-    </MDBFooter>
+    </div>
   );
 };
 
