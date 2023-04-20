@@ -1,20 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* body {
-  background-color: #ffdee9;
-  background-image: linear-gradient(0deg, #c989a0 0%, #e5ffb5 100%);
-} */
 
-/* font-family: 'Poppins', sans-serif; */
-/* font-family: 'Playfair Display', serif; */
 
-/* //navbar css */
 .navbar {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
@@ -44,17 +35,14 @@
   margin-top: 4px;
 }
 .search-form input {
-  border: none;
-  border-radius: 0;
+  border-radius: 1;
 }
 .search-form button {
   background-color: #000000;
   border-radius: 0;
-  color: white;
+  color: rgb(255, 252, 252);
 }
 
-/* =============================
-==========footer============= */
 
 .footer {
   color: white;
@@ -77,9 +65,12 @@
 .footer a:hover {
   color: #ffefba;
   border-bottom: 1px solid #ffefba;
-}
-/* =================================
-======== page not found css ======= */
+} 
+
+
+
+
+/* ======== page not found css ======= */
 .pnf {
   display: flex;
   min-height: 65vh;
@@ -108,8 +99,8 @@
   background-color: black;
   color: white;
 }
-/* ========================================= */
-/* =========contact us ========= */
+
+
 .contactus {
   margin: 0;
   padding: 0;
@@ -119,7 +110,7 @@
   justify-content: center;
 }
 
-/* ==================== */
+
 .product-link {
   text-decoration: none !important;
   color: black !important;
@@ -134,9 +125,7 @@
   background-color: #434343;
   color: white;
 }
-/* ================
-====dashboard
-=================== */
+
 
 .dashboard {
   margin-top: 100px !important;

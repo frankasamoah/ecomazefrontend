@@ -83,7 +83,7 @@ const Footer = () => {
             >
               <div className="w-75 mx-auto">
                 <h6 className="text-uppercase fw-bold mb-4">
-                  <BsGem className="me-3 " />
+                  <BsGem className="d-lg-inline-flex me-3 " />
                   Ecomaze
                 </h6>
                 <p>
